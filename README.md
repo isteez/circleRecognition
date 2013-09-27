@@ -5,6 +5,7 @@ A custom UIGestureRecognizer
 
 Current gestures recognized:
   - circle
+
 Feature gestures to be recognized:
   - arrow
   
