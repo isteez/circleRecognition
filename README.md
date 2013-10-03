@@ -6,7 +6,7 @@ A custom UIGestureRecognizer
 Current gestures recognized:
   - circle
 
-Feature gestures to be recognized:
+Future gestures to be recognized:
   - arrow
   
 The current implementation is using only one test to verify if the shape drawn is a circle or not.
