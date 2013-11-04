@@ -10,6 +10,4 @@
 
 @interface draw : UIView
 
-@property (assign) CGPoint placeState;
-
 @end

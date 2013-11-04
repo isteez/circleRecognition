@@ -15,13 +15,14 @@
 @end
 
 @implementation ViewController
+@synthesize count;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     gesture * recognizer2 = [[gesture alloc] initWithTarget:self action:@selector(handleCircle:)];
     [self.view addGestureRecognizer:recognizer2];
-    _count = 0;
+    count = 0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,15 +30,30 @@
     [super didReceiveMemoryWarning];
 }
 
+/*
+ // handleCircle function in order:
+ // debug
+ // running count for number of circles found
+ // retrieve touchBegin point from successful gesture
+ // convert NSValue to CGPoint
+ // create circle image
+ // set circle frame; where to place the image
+ // set image
+ // add image to view
+ // debug
+ */
+
 - (void)handleCircle:(gesture *)recognizer {
     NSLog(@"circle gesture found!");
-    _count++;
+    count++;
+    NSValue *value = [recognizer.points objectAtIndex:0];
+    CGPoint p1 = [value CGPointValue];
     UIImage *circleImg = [UIImage imageNamed:@"state.png"];
-    UIImageView *singleState = [[UIImageView alloc] initWithImage:circleImg];
-    CGRect frame = CGRectMake(50, 380, 100, 100);
-    [singleState setFrame:frame];
+    UIImageView *singleState = [[UIImageView alloc] initWithFrame:CGRectMake(p1.x, p1.y, 100, 100)];
+    singleState.image = circleImg;
     [self.view addSubview:singleState];
-    NSLog(@"count %d", _count);
+    NSLog(@"count %d", count);
 }
 
 @end
+

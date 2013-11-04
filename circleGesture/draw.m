@@ -23,6 +23,7 @@
     CGPoint pts[5]; // keep track of the four points of a Bezier segment and the first control point of the next segment
     uint ctr;
 }
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder])
@@ -34,6 +35,7 @@
     }
     return self;
 }
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -44,19 +46,21 @@
     }
     return self;
 }
+
 - (void)drawRect:(CGRect)rect
 {
     [incrementalImage drawInRect:rect];
     [path stroke];
 }
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     ctr = 0;
     UITouch *touch = [touches anyObject];
     pts[0] = [touch locationInView:self];
-    //UITouch * touch = [touches anyObject];
     NSLog(@"point found!");
 }
+
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
@@ -86,6 +90,7 @@
         ctr = 1;
     }
 }
+
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     //[self drawBitmap];
@@ -93,6 +98,7 @@
     [path removeAllPoints];
     ctr = 0;
 }
+
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self touchesEnded:touches withEvent:event];

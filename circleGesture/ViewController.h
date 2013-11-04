@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-//@property (assign) CGPoint placeState;
 @property (assign) NSInteger count;
 
 @end

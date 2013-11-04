@@ -10,7 +10,7 @@
 #import <UIKit/UIGestureRecognizerSubclass.h>
 
 @implementation gesture
-@synthesize points = _points;
+@synthesize points;
 
 // On new touch, start a new array of points
 - (void) touchesBegan:(NSSet *) touches withEvent:(UIEvent *) event
