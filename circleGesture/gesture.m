@@ -49,8 +49,10 @@
     CGFloat yDist = (p2.y - p1.y);
     CGFloat xDist = (p2.x - p1.x);
     CGFloat distance = sqrt((xDist * xDist) + (yDist * yDist));
-    if (distance < 60.0f)
-        [self setState:UIGestureRecognizerStateRecognized];
+    if (t1 != t2) {
+        if (distance < 60.0f)
+            [self setState:UIGestureRecognizerStateRecognized];
+    }
     
     /*
     // Circle Test 2: Count the distance traveled in degrees.
