@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gesture : UIGestureRecognizer {
+@interface CircleGesture : UIGestureRecognizer {
     NSMutableArray *points;
 }
 

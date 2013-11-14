@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C00214C17F50E4F00B7A12F /* draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00214B17F50E4F00B7A12F /* draw.m */; };
+		3C3DCCAC18346DFF00CB5BCF /* State.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3DCCAA18346DFF00CB5BCF /* State.png */; };
+		3C3DCCAD18346DFF00CB5BCF /* State@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3DCCAB18346DFF00CB5BCF /* State@2x.png */; };
 		3C89DDB717F4A602006148F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89DDB617F4A602006148F3 /* UIKit.framework */; };
 		3C89DDB917F4A602006148F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89DDB817F4A602006148F3 /* Foundation.framework */; };
 		3C89DDBB17F4A602006148F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89DDBA17F4A602006148F3 /* CoreGraphics.framework */; };
@@ -24,9 +26,7 @@
 		3C89DDDD17F4A603006148F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89DDB817F4A602006148F3 /* Foundation.framework */; };
 		3C89DDE517F4A603006148F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C89DDE317F4A603006148F3 /* InfoPlist.strings */; };
 		3C89DDE817F4A603006148F3 /* circleGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89DDE717F4A603006148F3 /* circleGestureTests.m */; };
-		3C89DDF317F4A8B3006148F3 /* gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89DDF217F4A8B3006148F3 /* gesture.m */; };
-		3C89DDF617F4D208006148F3 /* state.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89DDF417F4D208006148F3 /* state.png */; };
-		3C89DDF717F4D208006148F3 /* state@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C89DDF517F4D208006148F3 /* state@2x.png */; };
+		3C89DDF317F4A8B3006148F3 /* CircleGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C89DDF217F4A8B3006148F3 /* CircleGesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,8 @@
 /* Begin PBXFileReference section */
 		3C00214A17F50E4F00B7A12F /* draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw.h; sourceTree = "<group>"; };
 		3C00214B17F50E4F00B7A12F /* draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw.m; sourceTree = "<group>"; };
+		3C3DCCAA18346DFF00CB5BCF /* State.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = State.png; sourceTree = "<group>"; };
+		3C3DCCAB18346DFF00CB5BCF /* State@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "State@2x.png"; sourceTree = "<group>"; };
 		3C89DDB317F4A602006148F3 /* circleGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = circleGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C89DDB617F4A602006148F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C89DDB817F4A602006148F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,10 +66,8 @@
 		3C89DDE417F4A603006148F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C89DDE617F4A603006148F3 /* circleGestureTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circleGestureTests.h; sourceTree = "<group>"; };
 		3C89DDE717F4A603006148F3 /* circleGestureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = circleGestureTests.m; sourceTree = "<group>"; };
-		3C89DDF117F4A8B3006148F3 /* gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gesture.h; sourceTree = "<group>"; };
-		3C89DDF217F4A8B3006148F3 /* gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gesture.m; sourceTree = "<group>"; };
-		3C89DDF417F4D208006148F3 /* state.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state.png; sourceTree = "<group>"; };
-		3C89DDF517F4D208006148F3 /* state@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state@2x.png"; sourceTree = "<group>"; };
+		3C89DDF117F4A8B3006148F3 /* CircleGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGesture.h; sourceTree = "<group>"; };
+		3C89DDF217F4A8B3006148F3 /* CircleGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGesture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 				3C89DDD217F4A602006148F3 /* ViewController.m */,
 				3C00214A17F50E4F00B7A12F /* draw.h */,
 				3C00214B17F50E4F00B7A12F /* draw.m */,
-				3C89DDF117F4A8B3006148F3 /* gesture.h */,
-				3C89DDF217F4A8B3006148F3 /* gesture.m */,
+				3C89DDF117F4A8B3006148F3 /* CircleGesture.h */,
+				3C89DDF217F4A8B3006148F3 /* CircleGesture.m */,
 				3C89DDBD17F4A602006148F3 /* Supporting Files */,
 			);
 			path = circleGesture;
@@ -144,8 +144,8 @@
 		3C89DDBD17F4A602006148F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C89DDF417F4D208006148F3 /* state.png */,
-				3C89DDF517F4D208006148F3 /* state@2x.png */,
+				3C3DCCAA18346DFF00CB5BCF /* State.png */,
+				3C3DCCAB18346DFF00CB5BCF /* State@2x.png */,
 				3C89DDBE17F4A602006148F3 /* circleGesture-Info.plist */,
 				3C89DDBF17F4A602006148F3 /* InfoPlist.strings */,
 				3C89DDC217F4A602006148F3 /* main.m */,
@@ -252,8 +252,8 @@
 				3C89DDCB17F4A602006148F3 /* Default@2x.png in Resources */,
 				3C89DDCD17F4A602006148F3 /* Default-568h@2x.png in Resources */,
 				3C89DDD017F4A602006148F3 /* MainStoryboard.storyboard in Resources */,
-				3C89DDF617F4D208006148F3 /* state.png in Resources */,
-				3C89DDF717F4D208006148F3 /* state@2x.png in Resources */,
+				3C3DCCAC18346DFF00CB5BCF /* State.png in Resources */,
+				3C3DCCAD18346DFF00CB5BCF /* State@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 				3C89DDC317F4A602006148F3 /* main.m in Sources */,
 				3C89DDC717F4A602006148F3 /* AppDelegate.m in Sources */,
 				3C89DDD317F4A602006148F3 /* ViewController.m in Sources */,
-				3C89DDF317F4A8B3006148F3 /* gesture.m in Sources */,
+				3C89DDF317F4A8B3006148F3 /* CircleGesture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSMutableArray *stateArray;
+    UIImage *circleImg;
+}
 
-@property (assign) NSInteger count;
+@property (nonatomic, retain) NSMutableArray *stateArray;
 
 @end

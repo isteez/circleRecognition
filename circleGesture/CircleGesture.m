@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Blue Owl Labs. All rights reserved.
 //
 
-#import "gesture.h"
+#import "CircleGesture.h"
 #import <UIKit/UIGestureRecognizerSubclass.h>
 
-@implementation gesture
+@implementation CircleGesture
 @synthesize points;
 
 // On new touch, start a new array of points
